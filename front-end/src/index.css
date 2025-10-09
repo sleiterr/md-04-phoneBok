@@ -1,0 +1,20 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #333;
+  --color-card-subtitle: #333;
+  --color-title-card: #fff;
+  --color-featured: #323232;
+  --color-footer: #1d3f33;
+
+  --color-hover: #1d3f33;
+  --color-hover-footer: #72c183;
+
+  --color-green: rgba(29, 63, 51, 1);
+  --color-body: rgba(29, 63, 51, 1);
+  --color-debate: rgb(234, 230, 220);
+  --color-card: #f0f0f0;
+  --color-text-card: #858585;
+  --color-card-context: #0a0a0a;
+  --color-body: ;
+}

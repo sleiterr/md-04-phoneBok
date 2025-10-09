@@ -1,0 +1,15 @@
+.aboutTitle {
+  font-weight: 500;
+  font-size: 52px;
+  color: #333;
+}
+
+.aboutContainer {
+  padding: 120px 0;
+}
+
+.aboutContent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

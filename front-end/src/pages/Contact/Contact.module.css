@@ -1,0 +1,15 @@
+.contactTitle {
+  font-weight: 500;
+  font-size: 52px;
+  color: #333;
+}
+
+.contactContainer {
+  padding: 120px 0;
+}
+
+.conactContent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
