@@ -4,7 +4,7 @@ import axios from "axios";
 const BASE_URL = "http://localhost:3000"; // backend
 
 //Get all contacts
-export const fetchContacs = createAsyncThunk(
+export const fetchContacts = createAsyncThunk(
   "contacts/fetchAll",
   async (_, thunkAPI) => {
     try {
@@ -35,7 +35,7 @@ export const updateContact = createAsyncThunk(
   async ({ id, updateData }, thunkAPI) => {
     try {
       const res = await axios.patch(
-        `${BASE_URL} / update - phone / ${id}`,
+        `${BASE_URL}/update-phone/${id}`,
         updateData
       );
       return res.data.data.updatePhone; //Update Contact
