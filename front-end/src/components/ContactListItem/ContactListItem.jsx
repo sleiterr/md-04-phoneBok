@@ -1,13 +1,19 @@
 import React from "react";
 import PropTypes from "prop-types";
+import { ToastContainer, toast } from "react-toastify";
 import { useDispatch } from "react-redux";
 import { deleteContact } from "../../redux/contactsOps";
 
 const ContactListItem = ({ contact }) => {
   const dispatch = useDispatch();
 
-  const handleDelete = () => {
-    dispatch(deleteContact(contact._id));
+  const handleDelete = async () => {
+    try {
+      await dispatch(deleteContact(contact._id)).unwrap();
+      toast.success(`Contact "${contact.name}" delted successfully!`);
+    } catch (error) {
+      toast.error(`Failed to delete: ${error}`);
+    }
   };
 
   return (
