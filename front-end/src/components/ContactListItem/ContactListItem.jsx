@@ -7,7 +7,7 @@ const ContactListItem = ({ contact }) => {
   const dispatch = useDispatch();
 
   const handleDelete = () => {
-    dispatch(deleteContact(contact.id));
+    dispatch(deleteContact(contact._id));
   };
 
   return (
@@ -21,7 +21,7 @@ const ContactListItem = ({ contact }) => {
 
 ContactListItem.propTypes = {
   contact: PropTypes.shape({
-    id: PropTypes.string.isRequired,
+    _id: PropTypes.string.isRequired,
     name: PropTypes.string.isRequired,
     phoneNumber: PropTypes.string.isRequired,
   }).isRequired,
