@@ -9,7 +9,7 @@ const ContactList = () => {
   return (
     <ul className="bg-white/10 mt-6 rounded-xl py-8 px-6">
       {filteredContacts.map((contact) => (
-        <ContactListItem key={contact.id} contact={contact} />
+        <ContactListItem key={contact._id} contact={contact} />
       ))}
     </ul>
   );
