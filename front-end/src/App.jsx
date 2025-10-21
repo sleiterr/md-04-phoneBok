@@ -2,6 +2,8 @@ import React, { useEffect } from "react";
 import { useDispatch } from "react-redux";
 
 import ContactForm from "./components/ContactForm/ContactForm";
+import Filter from "./components/Filter/Filter";
+import ContactList from "./components/ContactList/ContactList";
 
 import { fetchContacts } from "../src/redux/contactsOps";
 
@@ -16,6 +18,8 @@ const App = () => {
     <div className="">
       <h1>Phone Book</h1>
       <ContactForm />
+      <Filter />
+      <ContactList />
     </div>
   );
 };

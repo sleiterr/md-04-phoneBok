@@ -89,8 +89,8 @@ const contactsSlice = createSlice({
 
 // Selector of filters
 export const selectFilteredContacts = createSelector(
-  (state) => state.contact.items,
-  (state) => state.contact.filters.name,
+  (state) => state.contacts.items,
+  (state) => state.contacts.filters.name,
   (contacts, filter) =>
     contacts.filter((contact) =>
       contact.name.toLowerCase().includes(filter.toLowerCase())
