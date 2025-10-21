@@ -4,7 +4,8 @@ import { useDispatch } from "react-redux";
 import ContactForm from "./components/ContactForm/ContactForm";
 import Filter from "./components/Filter/Filter";
 import ContactList from "./components/ContactList/ContactList";
-
+import "react-toastify/dist/ReactToastify.css";
+import { ToastContainer } from "react-toastify";
 import { fetchContacts } from "../src/redux/contactsOps";
 
 const App = () => {
@@ -24,6 +25,7 @@ const App = () => {
           <ContactForm />
           <Filter />
           <ContactList />
+          <ToastContainer position="top-right" autoClose={2000} />
         </div>
       </div>
     </main>
