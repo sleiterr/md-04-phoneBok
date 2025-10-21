@@ -13,6 +13,8 @@ const router = createBrowserRouter([
   },
 ]);
 
+document.body.className = "bg-neutral-950";
+
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <Provider store={store}>

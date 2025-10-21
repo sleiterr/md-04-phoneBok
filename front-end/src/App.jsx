@@ -15,12 +15,18 @@ const App = () => {
   }, [dispatch]);
 
   return (
-    <div className="">
-      <h1>Phone Book</h1>
-      <ContactForm />
-      <Filter />
-      <ContactList />
-    </div>
+    <main>
+      <div className="flex justify-center items-center min-h-screen">
+        <div className="">
+          <h1 className="fornt-light text-3xl text-primary text-center">
+            Phone Book
+          </h1>
+          <ContactForm />
+          <Filter />
+          <ContactList />
+        </div>
+      </div>
+    </main>
   );
 };
 

@@ -11,10 +11,21 @@ const ContactListItem = ({ contact }) => {
   };
 
   return (
-    <li>
-      <p>{contact.name}</p>
-      <p>{contact.phoneNumber}</p>
-      <button onClick={handleDelete}>Delete</button>
+    <li className="flex items-center justify-between">
+      <div className="flex flex-row items-center gap-2">
+        <p className="font-normal text-base text-primary">{contact.name}</p>
+        <p className="font-normal text-base text-primary">
+          {contact.phoneNumber}
+        </p>
+      </div>
+      <div className="flex flex-col items-center justify-center mt-2">
+        <button
+          onClick={handleDelete}
+          className="text-primary bg-red-600 py-1 px-4 rounded-sm transition-all cursor-pointer"
+        >
+          Delete
+        </button>
+      </div>
     </li>
   );
 };
