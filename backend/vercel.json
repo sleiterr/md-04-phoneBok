@@ -1,0 +1,11 @@
+{
+  "rewrites": [
+    { "source": "/add-phone", "destination": "/api/add-phone" },
+    { "source": "/get-phone", "destination": "/api/get-phone" },
+    {
+      "source": "/update-phone/:id",
+      "destination": "/api/update-phone?id=:id"
+    },
+    { "source": "/delete-phone/:id", "destination": "/api/delete-phone?id=:id" }
+  ]
+}
